@@ -16,8 +16,8 @@ Gem::Specification.new do |spec|
   spec.homepage      = 'https://github.com/e2/gem_isolator'
   spec.license       = 'MIT'
 
-  spec.files         = `git ls-files -z`.split("\x0").reject do |f|
-    f.match(%r{^(test|spec|features)/})
+  spec.files         = `git ls-files -z`.split("\x0").select do |f|
+    f.match(%r{^(lib/|README.md|LICENSE.txt)})
   end
 
   spec.bindir        = 'exe'
