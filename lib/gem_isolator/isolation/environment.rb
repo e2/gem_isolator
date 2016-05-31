@@ -20,7 +20,7 @@ module GemIsolator
       attr_reader :gem_home
 
       def bin_path
-        @bin_path ||= gem_home + 'gems/bin'
+        @bin_path ||= gem_home + 'bin'
       end
     end
   end

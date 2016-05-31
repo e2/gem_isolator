@@ -15,7 +15,7 @@ RSpec.describe GemIsolator::Isolation::Environment do
     context 'with the gem home set to /tmp/foo' do
       it { is_expected.to include('GEM_HOME' => '/tmp/foo') }
       it { is_expected.to include('GEM_PATH' => '/tmp/foo') }
-      it { is_expected.to include('PATH' => '/tmp/foo/gems/bin:/usr/bar/bin') }
+      it { is_expected.to include('PATH' => '/tmp/foo/bin:/usr/bar/bin') }
     end
   end
 end
