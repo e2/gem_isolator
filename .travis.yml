@@ -1,3 +1,6 @@
+env:
+  - SKIP_GEMFILE_DEPS=1
+
 sudo: false
 language: ruby
 bundler_args: --without development
@@ -5,4 +8,3 @@ cache: bundler
 rvm:
   - 2.2.5
   - 2.3.1
-before_install: gem install bundler -v 1.12.4
