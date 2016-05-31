@@ -1,3 +1,5 @@
+[![Gem Version](https://badge.fury.io/rb/gem_isolator.png)](http://badge.fury.io/rb/gem_isolator) [![Build Status](https://secure.travis-ci.org/e2/gem_isolator.png?branch=master)](http://travis-ci.org/e2/gem_isolator) 
+
 # GemIsolator
 
 Allows running commands in an isolated set of gems.
