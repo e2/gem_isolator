@@ -101,7 +101,7 @@ Run `rake spec` to run the tests.
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/gem_isolator.
+Bug reports and pull requests are welcome on GitHub at https://github.com/e2/gem_isolator.
 
 If there are no other major open pull requests (or active branches), feel free to refactor/reorganize the project as you like.
 
