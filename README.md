@@ -69,12 +69,8 @@ Capturing output is not yet supported (open a PR if you're interested).
 NOTE: Inside the block, the current directory is set to a temporary directory,
 so it's best to expand your paths outside the block.
 
-NOTE: Variables other than those reset by `Bundler.with_clean_env` are left
-alone, so it's up to you to reset them. (Open an issue if you want to have a
-"clean slate").
-
 NOTE: You might prefer to use caching, by e.g. setting a gem source or proxy.
-Open a feature request if you're interested.
+Open a feature request if you're interested in something automatic/generic.
 
 NOTE: `:gems` option is an array (for each gem) of arrays (Gemfile `gem` keyword arguments). `.inspect` is used to stringify, so things should work as expected, even if you use a hash.
 
