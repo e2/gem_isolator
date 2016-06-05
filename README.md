@@ -33,14 +33,14 @@ E.g. in an RSpec test:
 
 ```ruby
 cmd = "ruby #{File.expand_path('lib/foo.rb')}"
-GemIsolator.isolate(gems: %w(bar >=3.2.1)) do |env, isolation|
+GemIsolator.isolate(gems: [%w(bar >=3.2.1)]) do |env, isolation|
   expect(isolation.system(env, cmd)).to eq(true)
 end
 ```
 
-1. 'lib/foo.rb' is relative to your project's current directory.
+1. `lib/foo.rb` is relative to your project's current directory.
 2. `system` acts just like `Kernel.system`.
-3. you can pass custom environment variables, e.g `env.merge('FOO' => '1')`
+3. You can pass custom environment variables, e.g `env.merge('FOO' => '1')`
 4. `:gems` is a list of gems you want installed
 
 ## Features
