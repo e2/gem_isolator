@@ -11,7 +11,7 @@ Bundler isn't necessary to run your Ruby code in isolation.
 
 ## Requirements
 
-For supported Ruby versions, check the .travis.yml file.
+For supported Ruby versions, check the [Travis build status](https://travis-ci.org/e2/gem_isolator)
 
 (For supporting older versions, open an issue - with some info about why you are unable to upgrade).
 
