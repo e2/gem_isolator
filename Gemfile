@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 if ENV['SKIP_GEMFILE_DEPS'] == '1'
   gem 'bundler', '~> 1.12'
   gem 'rake', '~> 11.1'
-  gem 'ruby_dep', '~> 1.3', '>= 1.3.1'
+  gem 'ruby_dep', '~> 1.3', '>= 1.3.1', github: 'e2/ruby_dep', branch: 'master'
 else
   gemspec development_group: :gem_tools
 end
