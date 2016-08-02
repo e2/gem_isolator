@@ -43,6 +43,17 @@ end
 3. You can pass custom environment variables, e.g `env.merge('FOO' => '1')`
 4. `:gems` is a list of gems you want installed
 
+To use your project sources:
+
+```ruby
+cmd = "bundle exec ruby #{File.expand_path('lib/foo.rb')}" # bundler is needed to turn project dir into gem source
+source_def = ['myproject', path: Dir.pwd] # expands to use `:path` parameter in `Gemfile`
+GemIsolator.isolate(gems: [source_def, %w(bar >=3.2.1)]) do |env, isolation|
+  expect(isolation.system(env, cmd)).to eq(true)
+end
+```
+
+
 ## Features
 
 - [x] sets up temp dir with bundled gems
