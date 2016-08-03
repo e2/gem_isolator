@@ -34,7 +34,7 @@ module GemIsolator
       private
 
       def gem_base_path
-        @gem_base_path ||= Pathname.pwd + 'bundle/ruby'
+        @gem_base_path ||= Pathname.pwd + "bundle/#{RUBY_ENGINE}"
       end
 
       def ruby_dir
