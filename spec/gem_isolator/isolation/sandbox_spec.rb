@@ -72,7 +72,7 @@ RSpec.describe GemIsolator::Isolation::Sandbox do
     context 'with a sane setup' do
       before do
         allow(Pathname).to receive(:pwd).and_return(pwd_path)
-        allow(pwd_path).to receive(:+).with('bundle/ruby')
+        allow(pwd_path).to receive(:+).with("bundle/#{RUBY_ENGINE}")
           .and_return(ruby_path)
 
         allow(ruby_path).to receive(:children).and_return(ruby_subdirs)
